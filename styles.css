@@ -3,3 +3,30 @@
     width: 50%;
     padding: 10px;
 }
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    /*background-color: green;*/
+  }
+#playing-field {
+    margin: auto; /* makes it centered horizontally */
+    width: 80vh;
+    height: 80vh;
+    background-color: hotpink;
+}
+#playing-field-image {
+    height: 80vh;
+}
+body {
+    background-color: grey;
+    margin: 0%;
+}
+header, footer {
+    height: 10vh;
+    background-color: greenyellow;
+}
+main {
+    height: 80vh;
+    background-color: rgb(47, 130, 255);
+}
