@@ -12,13 +12,22 @@ for (let i = 0; i < 30; ++i) {
     row.style = "max-width: 100vw;";
     for (let i = 0; i < 30; ++i) {
         let cell = document.createElement("td");
-
-        cell.style = "background-color: green; width:2vh; height:2vh; border:1px solid red; background-color: black;";
-        
+        cell.id = i;
+        cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: rgb(240, 240, 240);";
+        cell.onmouseenter = function cellHover() {
+            cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: blue;";
+            console.log("entered");
+        }
+        cell.onmouseleave = function cellHover() {
+            cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: rgb(240, 240, 240);";
+            console.log("entered");
+        }
         row.appendChild(cell);
     }
     playingFieldTable.appendChild(row);
 }
+
+
 
 let main = document.getElementsByTagName("main");
 main.style = "max-width: 100vw";
