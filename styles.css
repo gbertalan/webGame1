@@ -10,6 +10,9 @@ body {
     /*background-color: green;*/
   }
 #playing-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: auto; /* makes it centered horizontally */
     width: 80vh;
     height: 80vh;
