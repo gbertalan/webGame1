@@ -13,13 +13,13 @@ for (let i = 0; i < 30; ++i) {
     for (let i = 0; i < 30; ++i) {
         let cell = document.createElement("td");
         cell.id = i;
-        cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: rgb(240, 240, 240);";
+        cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: rgb(240, 240, 240);";
         cell.onmouseenter = function cellHover() {
-            cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: blue;";
+            cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: blue;";
             console.log("entered");
         }
         cell.onmouseleave = function cellHover() {
-            cell.style = "width:2vh; height:2vh; border:1px solid red; background-color: rgb(240, 240, 240);";
+            cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: rgb(240, 240, 240);";
             console.log("entered");
         }
         row.appendChild(cell);
