@@ -7,19 +7,22 @@ div.style = "width:2%; height:2%; border:1px solid black";
 playingField.appendChild(div);
 }
 */
-for (let i = 0; i < 30; ++i) {
+let playingFieldSize = 50; // (10) -> square of 10x10
+
+for (let i = 0; i < playingFieldSize; ++i) {
     let row = document.createElement("tr");
     row.style = "max-width: 100vw;";
-    for (let i = 0; i < 30; ++i) {
+    for (let i = 0; i < playingFieldSize; ++i) {
         let cell = document.createElement("td");
         cell.id = i;
-        cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: rgb(240, 240, 240);";
+        let widthHeight = "width: " + (100/playingFieldSize) + "%; height: " + (100/playingFieldSize) + "%; ";
+        cell.style = widthHeight + "border:1px solid white; background-color: rgb(240, 240, 240);";
         cell.onmouseenter = function cellHover() {
-            cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: blue;";
+            cell.style = "border:1px solid white; background-color: blue;";
             console.log("entered");
         }
         cell.onmouseleave = function cellHover() {
-            cell.style = "width:2vh; height:2vh; border:1px solid white; background-color: rgb(240, 240, 240);";
+            cell.style = "border:1px solid white; background-color: rgb(240, 240, 240);";
             console.log("entered");
         }
         row.appendChild(cell);

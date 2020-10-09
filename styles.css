@@ -9,14 +9,12 @@ body {
 }
 
 main {
-    
     margin: auto;
-    /* makes it centered horizontally */
+    /*<- makes it centered horizontally */
     width: 80vh;
     height: 80vh;
     background-color: hotpink;
     max-width: 100vw;
-    
 }
 
 header, footer {
@@ -30,6 +28,7 @@ footer {
 
 #playing-field-table {
     position: relative;
+    /*<- position is needed in order to be able to use z-index*/
     width: 100%;
     height: 100%;
     max-width: 100vw;
