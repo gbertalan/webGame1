@@ -11,10 +11,7 @@ body {
     
   }
 main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
 
     margin: auto; /* makes it centered horizontally */
     width: 80vh;
@@ -22,17 +19,27 @@ main {
     background-color: hotpink;
 
     max-width: 100vw;
-    max-height: 100vw;
 }
 body {
     background-color: grey;
     margin: 0%;
+    max-width: 100vw;
 }
 header, footer {
     height: 10%;
     background-color: greenyellow;
 }
+footer {
+    vertical-align: bottom;
+}
 #playing-field-table {
     width: 100%;
     height: 100%;
+    
+    max-width: 100vw;
+    max-height: 100vw;
+}
+#scores {
+    height: 20%;
+    background-color: rgb(47, 65, 30);
 }
